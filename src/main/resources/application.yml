@@ -17,5 +17,14 @@ spring :
         type: com.alibaba.druid.pool.DruidDataSource
         connectionProperties: druid.stat.mergeSql=true
 
+#    thymeleaf :
+#        prefix : classpath:/templates/
+
+    mvc :
+        view :
+            prefix : /WEB-INF/jsp/
+            #suffix : .jsp
+
+
 
 
