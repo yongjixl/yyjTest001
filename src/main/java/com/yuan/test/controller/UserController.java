@@ -7,7 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
+@RequestMapping(value = "/user")
 public class UserController {
     @Autowired
     UserService userService;
@@ -25,7 +26,7 @@ public class UserController {
     @RequestMapping(value = "/getIndex")
     public String getIndex(){
         System.out.println("sss");
-        return "index";
+        return "index.jsp";
     }
 
 
